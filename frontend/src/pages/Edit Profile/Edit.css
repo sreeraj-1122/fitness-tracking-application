@@ -1,0 +1,75 @@
+.profile-edit-container {
+    width: 75%;
+    /* margin: 65px auto 20px auto; */
+    height: max-content;
+    margin: 20px auto ;
+}
+
+.profile-edit-container h1 {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.profile-edit-container form .profile-edit-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+}
+
+.profile-edit-inputs label {
+    margin-top: 15px;
+    font-size: 17px;
+    color: rgb(36, 36, 36);
+    font-weight: 600;
+}
+
+.profile-edit-inputs input,select {
+    padding: 7px 10px;
+    border: 1px solid gray;
+    font-size: 17px;
+}
+
+.profile-edit-inputs input[type="file"]::file-selector-button {
+    border-radius: 4px;
+    padding: 0 16px;
+    height: 40px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+    background-color: #449a4a;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    transition: background-color 200ms;
+}
+
+.profile-edit-inputs input[type="file"]::file-selector-button:hover {
+    background-color: #2e6731;
+}
+
+
+
+
+
+
+
+
+
+.profile-edit-container button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background-color: #449a4a;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    transition: background-color 200ms;
+
+}
+.profile-edit-container button:hover{
+    background-color: #2e6731;
+}

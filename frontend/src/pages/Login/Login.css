@@ -1,0 +1,152 @@
+.register {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.pinimg.com/600x315/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg);
+    background-repeat: none;
+}
+
+.form-section {
+  margin: 20px;
+    text-align: center;
+    background-color: #252525;
+    width: 490px;
+    height: max-content;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(191, 191, 191, .5)
+}
+
+.form-section h1 {
+    color: #fff;
+    font-weight: 600;
+    padding: 15px 0;
+
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0 25px;
+}
+
+.input label {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 10px;
+
+}
+
+.input .input-box {
+    width: 390px;
+    height: 30px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+    /* margin-top: 5px; */
+}
+.forgot-pass{
+    font-weight: 500;
+}
+
+.input input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 10px;
+
+}
+
+.btn-login {
+    padding: 8px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn-login:hover{
+    background-color: #dfd9d9;
+}
+.form-section p {
+    color: rgb(148, 147, 147);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+}
+
+.form-section span {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+
+}
+
+.form-section span a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 4px;
+}
+.input span{
+    display: flex;
+    justify-content: end;
+    width: 90%;
+}
+
+/* sighn up */
+.image-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-div input {
+    display: none;
+}
+
+.image-div img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+
+}
+
+.file-upload {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media(max-width:425px) {
+    .form-section {
+        text-align: center;
+        background-color: #252525;
+        width: 400px;
+        margin: 20px 10px;
+        height: max-content;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px #bfbfbf80
+    }
+
+    .input .input-box {
+        width: 340px;
+        height: 30px;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}

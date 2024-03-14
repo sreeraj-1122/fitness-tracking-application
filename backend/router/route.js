@@ -1,0 +1,45 @@
+const express=require('express')
+const registerUser = require('../controllers/userController/userregister')
+const multer=require('multer')
+const loginFunction = require('../controllers/userController/userlogin')
+const getUser = require('../controllers/userController/getUser')
+const editUser = require('../controllers/userController/editUser')
+const getAlluser = require('../controllers/adminController/getAlluser')
+const deleteUser = require('../controllers/adminController/deleteUser')
+const addExercise = require('../controllers/adminController/addExercise')
+const getExercise = require('../controllers/adminController/getExercises')
+const editExercise = require('../controllers/adminController/editExercise')
+const getSingleExercise = require('../controllers/adminController/getOneExercise')
+const deleteExercise = require('../controllers/adminController/deleteExercise')
+const addWorkout = require('../controllers/userController/addWorkout')
+const protect = require('../middleware/Token')
+const getWorkout = require('../controllers/userController/getWorkout')
+const deleteWorkout = require('../controllers/userController/deleteWorkout')
+const completeWorkout = require('../controllers/userController/completeWorkout')
+const forgotPassword = require('../controllers/userController/forgotPassword')
+ 
+const router=express.Router()
+ const middleware=[protect]
+const uploadMiddleware = multer({ dest: 'uploads/' })
+ 
+router.route('/register').post(uploadMiddleware.single("profile"),registerUser)
+router.route('/login').post(loginFunction)     
+router.route('/profile/:id').get(getUser)
+router.route('/edituser/:id').put(uploadMiddleware.single("profile"),editUser)
+router.route('/admin/users').get(getAlluser)
+router.route('/admin/users/:id').delete(deleteUser)
+router.route('/admin/addexercise').post(uploadMiddleware.single("photo"),addExercise) 
+router.route('/admin/exercise').get(getExercise)  
+router.route('/admin/exercise/:id').get(getSingleExercise)  
+router.route('/admin/exercise/:id').delete(deleteExercise)  
+router.route('/workout').post(middleware,addWorkout)  
+router.route('/workout/:id').delete(middleware,deleteWorkout)  
+router.route('/addworkout/:id').get(middleware,getWorkout)  
+router.route('/editworkout/:id').patch(middleware,completeWorkout)  
+router.route('/password').patch(forgotPassword)   
+router.route('/admin/editexercise/:id').put(uploadMiddleware.single("photo"),editExercise)  
+ 
+ 
+
+module.exports=router
+ 

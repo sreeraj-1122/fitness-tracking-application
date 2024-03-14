@@ -1,0 +1,26 @@
+.workout-mainsection{
+    position: relative;
+    padding:0px 70px;
+}
+.workout-section{
+    padding: 20px;
+    margin-top: 20px;
+    
+}
+.diagram{
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+}
+/* .workout-section .add-workout{
+    border: 2px solid rgb(133, 129, 129);
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgb(33, 32, 32);
+    display: inline-flex;
+    position: absolute;
+    right: 30px;
+    top: 70px;
+    cursor: pointer;
+    color: rgb(253, 253, 253);
+} */

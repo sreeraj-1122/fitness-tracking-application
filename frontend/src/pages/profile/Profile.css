@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.profile-section {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    gap: 30px;
+}
+
+.profile-section .left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    padding-top: 10px;
+    align-items: center;
+    height: 400px;
+    justify-content: center;
+}
+
+.left-section img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.left-section h4{
+    font-size: 25px;    
+}
+.left-section p{
+    font-size: 17px
+}
+.profile-section .profile-body{
+    border-left: 1px solid gainsboro;
+    padding-left: 20px;
+    padding-top: 30px ;
+
+}
+.profile-items{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+.profile-body h1{
+    text-align: center;
+}
+.profile-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+    margin-left: 20px;
+}
+.profile-inputs label {
+    margin-top: 15px;
+    font-size: 19px;
+    color: rgb(36, 36, 36);
+    font-weight: 600;
+}
+.profile-inputs input {
+    padding: 7px 10px;
+    border: 1px solid gray;
+    font-size: 17px;
+}
+
+.profile-items button {
+    margin-top: 10px;
+    margin-left: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 8px 10px;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background-color: #449a4a;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    transition: background-color 200ms;
+
+}
+.profile-items button:hover{
+    background-color: #2e6731;
+}
